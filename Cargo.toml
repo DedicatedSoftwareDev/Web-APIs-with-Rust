@@ -1,0 +1,13 @@
+[package]
+name = "cr8s"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc", features = ["json"] }
+rocket_sync_db_pools = { version = "0.1.0-rc", features = ["diesel_postgres_pool"] }
+diesel = { version = "2.1.0", features = ["postgres","chrono"] }
+serde = { version = "1.0",features=["derive"]}
+chrono = {version="0.4",features=["serde"]}
